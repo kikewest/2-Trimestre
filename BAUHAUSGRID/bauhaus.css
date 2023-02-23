@@ -1,0 +1,148 @@
+#contenedor {
+  
+    display: grid;
+    grid-template-areas:
+
+    "rojo1"
+    "amarillo1"
+    "rojo2"
+    "azul1"
+    "blanco1"
+    "blanco2"
+    "azul2"
+    "amarillo2";
+    gap: 10px;
+   
+    width: 100%;
+    margin: auto;
+  }
+
+
+  #rojo1{
+    grid-area: rojo1;
+    background-color: red;
+  }
+
+
+  #amarillo1{
+    grid-area: amarillo1;
+    background-color: yellow;
+  }
+
+  #rojo2{
+    grid-area: rojo2;
+    background-color: red;
+  }
+
+  #azul1{
+    grid-area: azul1;
+    background-color: blue;
+  }
+
+
+  #blanco1{
+   
+    grid-area: blanco1;
+    background-color: white;
+  }
+
+  #blanco2{
+    grid-area: blanco2;
+    background-color: white;
+  }
+
+  #azul2{
+    grid-area: azul2;
+    background-color: blue;
+  }
+
+  #amarillo2{
+    grid-area: amarillo2;
+    background-color: yellow;
+  }
+
+
+  /*PARA PC */
+
+
+  
+@media screen and (min-width: 800px) {
+    #contenedor {  
+        width: 800px;   
+    height: 800PX;
+    background-color: #000;
+    border: 10px solid #000; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;   
+    grid-template-areas:
+        "rojo1 rojo2 rojo2 azul1 azul1 azul1"
+        "amarillo1 rojo2 rojo2 blanco1 blanco1 blanco1"
+        "amarillo1 rojo2 rojo2 blanco1 blanco1 blanco1"
+        "amarillo1 rojo2 rojo2 blanco1 blanco1 blanco1"
+        "amarillo1 rojo2 rojo2 blanco1 blanco1 blanco1"
+        "amarillo1 rojo2 rojo2 blanco2 azul2 amarillo2"
+
+
+
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    #contenedor {  
+        width: 768px;   
+    height: 768PX;
+    background-color: #000;
+    border: 10px solid #000; 
+    grid-template-columns: 1fr 1fr 1fr ;   
+    grid-template-areas:
+        "azul1 azul1 azul1"
+        "blanco1 blanco1 blanco1"
+        "blanco1 blanco1 blanco1"
+        "blanco1 blanco1 blanco1"
+        "blanco1 blanco1 blanco1"
+        "blanco1 blanco1 blanco1"
+        "blanco2 azul2 amarillo1"
+        "rojo1 rojo2 rojo2"
+        "rojo1 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2"
+        "amarillo2 rojo2 rojo2";
+
+
+
+
+}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #contenedor {  
+        width: 300px;   
+    height: 500PX;
+    background-color: #000;
+    border: 20px solid #000; 
+    grid-template-columns: 1fr ;   
+    grid-template-areas:
+        "rojo1"
+        "rojo2"
+        "azul1"
+        "amarillo1"
+        "blanco1"
+        "blanco1"
+        "blanco1"
+        "blanco1"
+        "blanco1"
+        "blanco2"
+        "azul2"
+        "amarillo2";
+        
+
+}}
+
+
+
+
